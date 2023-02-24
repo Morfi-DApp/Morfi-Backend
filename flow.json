@@ -1,0 +1,17 @@
+{
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"sandboxnet": "access.sandboxnet.nodes.onflow.org:9000",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"Morfi": {
+			"fromFile": "Morfi.private.json"
+		},
+		"emulator-account": {
+			"address": "f8d6e0586b0a20c7",
+			"key": "4937e5aa542ffe6fc2637bc568a21d91c57e0aaecb2ee39639b47fc1f6f8a75b"
+		}
+	}
+}
