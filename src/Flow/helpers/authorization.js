@@ -1,3 +1,5 @@
+/** @format */
+
 require("dotenv").config();
 const { SHA3 } = require("sha3");
 const { sansPrefix, withPrefix } = require("@onflow/util-address");
@@ -27,7 +29,7 @@ const authorizationFunction = async (account) => {
   // const pkey = process.env.ACCOUNT_PRIVATE_KEY;
   const keyId = Number(1); // always ensure that your keyId is a number not a string
   const accountAddress = process.env.MORFI_ACCOUNT;
-  const pkey = process.env.MORFI_ACCOUNT_PRIVATE_KEY
+  const pkey = process.env.MORFI_ACCOUNT_PRIVATE_KEY;
 
   console.log(keyId, accountAddress, pkey);
 
@@ -47,12 +49,12 @@ const authorizationFunction = async (account) => {
       return {
         addr: withPrefix(accountAddress), // needs to be the same as the account.addr but this time with a prefix, eventually they will both be with a prefix
         keyId, // needs to be the same as account.keyId, once again make sure its a number and not a string
-        signature // this needs to be a hex string of the signature, where signable.message is the hex value that needs to be signed
+        signature, // this needs to be a hex string of the signature, where signable.message is the hex value that needs to be signed
       };
-    }
+    },
   };
 };
 
 module.exports = {
-  authorizationFunction
+  authorizationFunction,
 };
