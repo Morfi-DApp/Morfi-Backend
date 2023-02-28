@@ -21,6 +21,7 @@
     "@onflow/fcl": "^1.3.2",
     "@onflow/types": "^1.0.5",
     "@onflow/util-address": "^1.0.3",
+    "axios": "^1.3.4",
     "buffer": "^6.0.3",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
